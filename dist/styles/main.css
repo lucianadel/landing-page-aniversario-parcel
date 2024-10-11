@@ -1,4 +1,117 @@
 body {
-  background-color: red;
+  background-color: #e84393;
+  margin: 0;
+  padding: 0;
+  font-family: Raleway, sans-serif;
+}
+
+.header {
+  text-align: center;
+  background-image: linear-gradient(#0984e3, #0652dd, #1b1464);
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+}
+
+.header h1 {
+  color: #fff;
+}
+
+.header img {
+  border-radius: 50%;
+  width: 150px;
+  height: auto;
+  margin: 10px auto;
+}
+
+.main {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.main section {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 45%;
+  margin: 10px;
+  padding: 15px;
+}
+
+.countdown, .gallery, .wishlist, .present-selection {
+  text-align: center;
+}
+
+.countdown h2, .gallery h2, .wishlist h2, .present-selection h2 {
+  color: #333;
+}
+
+.wishlist .present-images {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+  display: flex;
+}
+
+.wishlist .present-images li {
+  margin: 5px;
+  list-style: none;
+}
+
+.wishlist .present-images li label {
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.wishlist .present-images li img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
+.present-selection #selected-presents-message {
+  margin-bottom: 15px;
+}
+
+#confirmPresentButton {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  background-color: #e84393;
+  border-radius: 8px;
+  margin: 4px 2px;
+  padding: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+#confirmPresentButton:hover {
+  background-color: #0652dd;
+}
+
+@media (width <= 768px) {
+  .main {
+    background-color: #0652dd;
+    flex-direction: column;
+  }
+
+  .main section {
+    flex: 0 auto;
+  }
+}
+
+@media (width <= 480px) {
+  .header {
+    background-color: #e84393;
+    padding-bottom: 10px;
+  }
+
+  .main section {
+    background-color: #1b1464;
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
